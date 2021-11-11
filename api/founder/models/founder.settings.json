@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "companies",
+  "collectionName": "founders",
   "info": {
-    "name": "Company"
+    "name": "Founder"
   },
   "options": {
     "increments": true,
@@ -14,21 +14,14 @@
     "name": {
       "type": "string"
     },
-    "categories": {
-      "collection": "category",
-      "via": "company"
-    },
     "slug": {
       "type": "uid",
       "targetField": "name"
     },
-    "contact_person": {
-      "via": "company",
-      "model": "contact-person"
-    },
-    "founders": {
-      "via": "companies",
-      "collection": "founder"
+    "companies": {
+      "collection": "company",
+      "via": "founders",
+      "dominant": true
     }
   }
 }

@@ -1,8 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "companies",
+  "collectionName": "contact_people",
   "info": {
-    "name": "Company"
+    "name": "Contact Person",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -14,21 +15,16 @@
     "name": {
       "type": "string"
     },
-    "categories": {
-      "collection": "category",
-      "via": "company"
-    },
     "slug": {
       "type": "uid",
       "targetField": "name"
     },
-    "contact_person": {
-      "via": "company",
-      "model": "contact-person"
+    "email": {
+      "type": "email"
     },
-    "founders": {
-      "via": "companies",
-      "collection": "founder"
+    "company": {
+      "model": "company",
+      "via": "contact_person"
     }
   }
 }
