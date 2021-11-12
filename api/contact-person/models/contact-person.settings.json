@@ -23,8 +23,8 @@
       "type": "email"
     },
     "company": {
-      "model": "company",
-      "via": "contact_person"
+      "via": "local_representative",
+      "model": "company"
     }
   }
 }

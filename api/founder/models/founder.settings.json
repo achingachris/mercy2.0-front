@@ -19,8 +19,8 @@
       "targetField": "name"
     },
     "companies": {
-      "collection": "company",
       "via": "founders",
+      "collection": "company",
       "dominant": true
     }
   }

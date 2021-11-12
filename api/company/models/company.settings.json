@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "companies",
   "info": {
-    "name": "Company"
+    "name": "Company",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -22,13 +23,64 @@
       "type": "uid",
       "targetField": "name"
     },
-    "contact_person": {
-      "via": "company",
-      "model": "contact-person"
+    "local_representative": {
+      "model": "contact-person",
+      "via": "company"
     },
     "founders": {
       "via": "companies",
       "collection": "founder"
+    },
+    "location": {
+      "type": "string"
+    },
+    "sub_county": {
+      "type": "string"
+    },
+    "description_programs": {
+      "type": "richtext"
+    },
+    "website_url": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "official_email": {
+      "type": "email"
+    },
+    "official_tel": {
+      "type": "biginteger"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "isPrivate": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "founder": {
+      "model": "founder"
+    },
+    "county": {
+      "type": "string"
+    },
+    "twitter_url": {
+      "type": "string"
+    },
+    "facebook_url": {
+      "type": "string"
+    },
+    "linkedin_url": {
+      "type": "string"
     }
   }
 }
