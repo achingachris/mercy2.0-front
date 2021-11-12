@@ -23,6 +23,7 @@
 //   };
 // };
 
+// Use this configuration for an SQLite database on your machine.
 module.exports = ({ env }) => ({
   defaultConnection: 'default',
   connections: {
