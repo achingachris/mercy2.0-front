@@ -23,14 +23,6 @@
       "type": "uid",
       "targetField": "name"
     },
-    "local_representative": {
-      "model": "contact-person",
-      "via": "company"
-    },
-    "founders": {
-      "via": "companies",
-      "collection": "founder"
-    },
     "location": {
       "type": "string"
     },
@@ -67,9 +59,6 @@
       "default": false,
       "required": true
     },
-    "founder": {
-      "model": "founder"
-    },
     "county": {
       "type": "string"
     },
@@ -80,6 +69,9 @@
       "type": "string"
     },
     "linkedin_url": {
+      "type": "string"
+    },
+    "local_representative": {
       "type": "string"
     }
   }

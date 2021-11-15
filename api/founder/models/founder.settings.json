@@ -17,11 +17,6 @@
     "slug": {
       "type": "uid",
       "targetField": "name"
-    },
-    "companies": {
-      "via": "founders",
-      "collection": "company",
-      "dominant": true
     }
   }
 }

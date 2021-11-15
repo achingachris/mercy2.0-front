@@ -21,10 +21,6 @@
     },
     "email": {
       "type": "email"
-    },
-    "company": {
-      "via": "local_representative",
-      "model": "company"
     }
   }
 }
