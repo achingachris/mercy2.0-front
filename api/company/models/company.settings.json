@@ -30,9 +30,8 @@
     "sub_county": {
       "type": "string"
     },
-    "brief_description": {
-      "type": "richtext",
-      "maxLength": 50
+    "description": {
+      "type": "richtext"
     },
     "website_url": {
       "type": "string"
@@ -69,6 +68,14 @@
     },
     "county": {
       "type": "string"
+    },
+    "bio": {
+      "type": "text",
+      "default": "50"
+    },
+    "contact_perssons": {
+      "collection": "contact-person",
+      "via": "company"
     }
   }
 }

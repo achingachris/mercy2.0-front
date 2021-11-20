@@ -25,6 +25,10 @@
     "isFounder": {
       "type": "boolean",
       "default": false
+    },
+    "company": {
+      "via": "contact_perssons",
+      "model": "company"
     }
   }
 }
