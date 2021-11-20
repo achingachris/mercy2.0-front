@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "contact_people",
   "info": {
-    "name": "Contact Person",
+    "name": "People",
     "description": ""
   },
   "options": {
@@ -21,6 +21,10 @@
     },
     "email": {
       "type": "email"
+    },
+    "isFounder": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

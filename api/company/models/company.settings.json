@@ -13,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "unique": true
     },
     "categories": {
       "via": "company",
@@ -29,13 +30,11 @@
     "sub_county": {
       "type": "string"
     },
-    "description_programs": {
-      "type": "richtext"
+    "brief_description": {
+      "type": "richtext",
+      "maxLength": 50
     },
     "website_url": {
-      "type": "string"
-    },
-    "address": {
       "type": "string"
     },
     "official_email": {
@@ -59,9 +58,6 @@
       "default": false,
       "required": true
     },
-    "county": {
-      "type": "string"
-    },
     "twitter_url": {
       "type": "string"
     },
@@ -71,7 +67,7 @@
     "linkedin_url": {
       "type": "string"
     },
-    "local_representative": {
+    "county": {
       "type": "string"
     }
   }
